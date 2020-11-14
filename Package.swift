@@ -24,10 +24,6 @@ let package = Package(
 
         .target(name: "CMiniaudio"),
         .target(name: "SwiftMiniaudioApp",
-                dependencies: [.byName(name: "SwiftMiniaudio")]),
-
-        .testTarget(
-            name: "SwiftMiniaudioTests",
-            dependencies: ["SwiftMiniaudio"])
+                dependencies: [.byName(name: "SwiftMiniaudio")])
     ]
 )
